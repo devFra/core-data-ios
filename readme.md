@@ -1,4 +1,4 @@
-﻿||||
+||||
 | :- | :-: | -: |
 
 Guide – Code Data – iOS
@@ -30,7 +30,7 @@ class DataController: ObservableObject {
     let container = NSPersistentContainer(name: "rsidatamodel")
 
     init(){
-        container.loadPersistentStores { description, error **in**
+        container.loadPersistentStores { description, error in
 
             if let error = error {
                 print ("Core Data failed to load: \(error.localizedDescription)")
