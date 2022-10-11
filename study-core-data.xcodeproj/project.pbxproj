@@ -7,18 +7,26 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		13946DE828F326DF004A4AC5 /* ContentViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 13946DE728F326DF004A4AC5 /* ContentViewModel.swift */; };
 		13E345D828EF0BCA005BF447 /* study_core_dataApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 13E345D728EF0BCA005BF447 /* study_core_dataApp.swift */; };
 		13E345DA28EF0BCA005BF447 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 13E345D928EF0BCA005BF447 /* ContentView.swift */; };
 		13E345DC28EF0BCD005BF447 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 13E345DB28EF0BCD005BF447 /* Assets.xcassets */; };
 		13E345DF28EF0BCD005BF447 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 13E345DE28EF0BCD005BF447 /* Preview Assets.xcassets */; };
+		13E345E728EF0CE8005BF447 /* rsidatamodel.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 13E345E528EF0CE8005BF447 /* rsidatamodel.xcdatamodeld */; };
+		13E345F428EF13E6005BF447 /* DataController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 13E345F328EF13E6005BF447 /* DataController.swift */; };
+		13E345F628F07D67005BF447 /* BookDataController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 13E345F528F07D67005BF447 /* BookDataController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		13946DE728F326DF004A4AC5 /* ContentViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentViewModel.swift; sourceTree = "<group>"; };
 		13E345D428EF0BCA005BF447 /* study-core-data.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "study-core-data.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		13E345D728EF0BCA005BF447 /* study_core_dataApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = study_core_dataApp.swift; sourceTree = "<group>"; };
 		13E345D928EF0BCA005BF447 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		13E345DB28EF0BCD005BF447 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		13E345DE28EF0BCD005BF447 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		13E345E628EF0CE8005BF447 /* rsidatamodel.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = rsidatamodel.xcdatamodel; sourceTree = "<group>"; };
+		13E345F328EF13E6005BF447 /* DataController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataController.swift; sourceTree = "<group>"; };
+		13E345F528F07D67005BF447 /* BookDataController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BookDataController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -51,10 +59,13 @@
 		13E345D628EF0BCA005BF447 /* study-core-data */ = {
 			isa = PBXGroup;
 			children = (
+				13E345EC28EF1091005BF447 /* DB */,
 				13E345D728EF0BCA005BF447 /* study_core_dataApp.swift */,
 				13E345D928EF0BCA005BF447 /* ContentView.swift */,
+				13946DE728F326DF004A4AC5 /* ContentViewModel.swift */,
 				13E345DB28EF0BCD005BF447 /* Assets.xcassets */,
 				13E345DD28EF0BCD005BF447 /* Preview Content */,
+				13E345E528EF0CE8005BF447 /* rsidatamodel.xcdatamodeld */,
 			);
 			path = "study-core-data";
 			sourceTree = "<group>";
@@ -65,6 +76,15 @@
 				13E345DE28EF0BCD005BF447 /* Preview Assets.xcassets */,
 			);
 			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		13E345EC28EF1091005BF447 /* DB */ = {
+			isa = PBXGroup;
+			children = (
+				13E345F328EF13E6005BF447 /* DataController.swift */,
+				13E345F528F07D67005BF447 /* BookDataController.swift */,
+			);
+			path = DB;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -137,8 +157,12 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				13E345F628F07D67005BF447 /* BookDataController.swift in Sources */,
 				13E345DA28EF0BCA005BF447 /* ContentView.swift in Sources */,
+				13946DE828F326DF004A4AC5 /* ContentViewModel.swift in Sources */,
+				13E345F428EF13E6005BF447 /* DataController.swift in Sources */,
 				13E345D828EF0BCA005BF447 /* study_core_dataApp.swift in Sources */,
+				13E345E728EF0CE8005BF447 /* rsidatamodel.xcdatamodeld in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -275,6 +299,7 @@
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -304,6 +329,7 @@
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -339,6 +365,19 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCVersionGroup section */
+		13E345E528EF0CE8005BF447 /* rsidatamodel.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				13E345E628EF0CE8005BF447 /* rsidatamodel.xcdatamodel */,
+			);
+			currentVersion = 13E345E628EF0CE8005BF447 /* rsidatamodel.xcdatamodel */;
+			path = rsidatamodel.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
 	};
 	rootObject = 13E345CC28EF0BCA005BF447 /* Project object */;
 }
